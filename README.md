@@ -1,2 +1,25 @@
 # yolo-toolkit
 一些处理yolv的小工具
+
+
+## 数据增强
+旋转一定角度
+
+需要四个路径，分别如下：
+
+'--input_img'或'-ii'：'原始图片的地址'
+
+'--input_anno'或'-ia'：'原始标签的地址'
+
+'--output_img'或'-oi'：'旋转后图片的地址'
+
+'--output_anno'或'-oa'：'旋转后标签的地址'
+
+例：
+```python
+python data_aug.py --input_img D:/xuanzuan/image -ia D:/xuanzuan/label2 -oi D:/xuanzuan/out_image -oa D:/xuanzuan/out_label
+```
+也可以设置起始的旋转角度（默认-10到10度），如果要设置成-15到15，则输入
+```python
+python data_aug.py --input_img D:/xuanzuan/image -ia D:/xuanzuan/label2 -oi D:/xuanzuan/out_image -oa D:/xuanzuan/out_label --min_angle -15 --max_angle 10
+```
