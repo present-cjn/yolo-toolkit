@@ -2,7 +2,10 @@
 一些处理yolv的小工具
 
 ## Prepare
+
 ```shell
+git clone https://github.com/present-cjn/yolo-toolkit.git
+cd yolo-toolkit
 pip install -r requirements.txt
 ```
 
