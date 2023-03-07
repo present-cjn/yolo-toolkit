@@ -1,6 +1,10 @@
 # yolo-toolkit
 一些处理yolv的小工具
 
+## Prepare
+```shell
+pip install -r requirements.txt
+```
 
 ## 数据增强
 旋转一定角度
@@ -21,5 +25,5 @@ python data_aug.py --input_img D:/xuanzuan/image -ia D:/xuanzuan/label2 -oi D:/x
 ```
 也可以设置起始的旋转角度（默认-10到10度），如果要设置成-15到15，则输入
 ```python
-python data_aug.py --input_img D:/xuanzuan/image -ia D:/xuanzuan/label2 -oi D:/xuanzuan/out_image -oa D:/xuanzuan/out_label --min_angle -15 --max_angle 10
+python data_aug.py --input_img D:/xuanzuan/image -ia D:/xuanzuan/label2 -oi D:/xuanzuan/out_image -oa D:/xuanzuan/out_label --min_angle -15 --max_angle 15
 ```
