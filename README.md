@@ -27,3 +27,9 @@ python data_aug.py --input_img D:/xuanzuan/image -ia D:/xuanzuan/label2 -oi D:/x
 ```python
 python data_aug.py --input_img D:/xuanzuan/image -ia D:/xuanzuan/label2 -oi D:/xuanzuan/out_image -oa D:/xuanzuan/out_label --min_angle -15 --max_angle 15
 ```
+
+## 图上显示txt框
+需要指定图片和标签的路径
+```python
+python display_box_txt.py --input_img E:\data\images --input_anno E:\data\labels
+```
