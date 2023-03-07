@@ -1,5 +1,5 @@
 # yolo-toolkit
-一些处理yolv的小工具
+一些处理yolo的小工具
 
 ## Prepare
 
