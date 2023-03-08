@@ -1,5 +1,5 @@
 # yolo-toolkit
-一些处理yolv的小工具
+一些处理yolo的小工具
 
 ## Prepare
 
@@ -44,6 +44,7 @@ python display_box_txt.py
 ```python
 python display_box_txt.py --input_img E:\data\images --input_anno E:\data\labels
 ```
+<<<<<<< HEAD
 
 # json转txt
 需要指定json文件夹的路径和txt文件夹的路径，可以在代码中更改default值
