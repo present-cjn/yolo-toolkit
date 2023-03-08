@@ -72,7 +72,8 @@ def getRotatedAnno(Pi_angle,a,b,anno_path,anno_write_path, img, rotated_img):
         for line in new_boxes:
             f.write(line + '\n')
 
-def rotate(angle,img_dir,anno_dir,img_write_dir,anno_write_dir):
+
+def rotate(angle, img_dir, anno_dir, img_write_dir, anno_write_dir):
     if not os.path.exists(img_write_dir):
         os.makedirs(img_write_dir)
 
@@ -92,11 +93,12 @@ def rotate(angle,img_dir,anno_dir,img_write_dir,anno_write_dir):
         getRotatedAnno(Pi_angle,a,b,anno_path,anno_write_path, img, rotated_img)
 
 
+# 下面default后可以输入默认的路径，输入后不需要命令行中添加路径
 parser = argparse.ArgumentParser(description='命令行参数')
-parser.add_argument('--input_img', '-ii', type=str, help='原始图片的地址')
-parser.add_argument('--input_anno', '-ia', type=str, help='原始标签的地址')
-parser.add_argument('--output_img', '-oi', type=str, help='增强后图片的地址')
-parser.add_argument('--output_anno', '-oa', type=str, help='增强后标签的地址')
+parser.add_argument('--input_img', '-ii', type=str, default='', help='原始图片的地址')
+parser.add_argument('--input_anno', '-ia', type=str, default='', help='原始标签的地址')
+parser.add_argument('--output_img', '-oi', type=str, default='', help='增强后图片的地址')
+parser.add_argument('--output_anno', '-oa', type=str, default='', help='增强后标签的地址')
 parser.add_argument('--min_angle', type=int, default=-10, help='最小角度（角度制）')
 parser.add_argument('--max_angle', type=int, default=10, help='最大角度（角度制）')
 parser.add_argument('--angle_step', type=int, default=1, help='角度步长（角度制）')

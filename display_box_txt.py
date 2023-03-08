@@ -11,9 +11,10 @@ import os
 from utils import *
 import cv2
 
+# 下面default后可以输入默认的路径，输入后不需要命令行中添加路径
 parser = argparse.ArgumentParser(description='命令行参数')
-parser.add_argument('--input_img', '-ii', type=str, help='图片的地址')
-parser.add_argument('--input_anno', '-ia', type=str, help='txt标签的地址')
+parser.add_argument('--input_img', '-ii', type=str, default='', help='图片的地址')
+parser.add_argument('--input_anno', '-ia', type=str, default='', help='txt标签的地址')
 
 args = parser.parse_args()
 

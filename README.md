@@ -12,7 +12,9 @@ pip install -r requirements.txt
 ## 数据增强
 旋转一定角度
 
-需要四个路径，分别如下：
+需要四个路径，可以在代码中更改default值，如果不想改代码，可以在命令行输入
+
+分别如下：
 
 '--input_img'或'-ii'：'原始图片的地址'
 
@@ -32,7 +34,25 @@ python data_aug.py --input_img D:/xuanzuan/image -ia D:/xuanzuan/label2 -oi D:/x
 ```
 
 ## 图上显示txt框
-需要指定图片和标签的路径
+需要指定图片和标签的路径，可以在代码中更改default值
+
+然后运行
+```python
+python display_box_txt.py
+```
+如果不想改代码，可以在命令行输入路径
 ```python
 python display_box_txt.py --input_img E:\data\images --input_anno E:\data\labels
+```
+
+# json转txt
+需要指定json文件夹的路径和txt文件夹的路径，可以在代码中更改default值
+
+然后运行
+```python
+python json2txt
+```
+如果不想改代码，可以在命令行输入路径
+```python
+ python display_box_txt.py --input_img D:\xuanzuan\label --input_anno D:\xuanzuan\label2    
 ```
